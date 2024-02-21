@@ -3,27 +3,29 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 //import reportWebVitals from './reportWebVitals';
+import { Header } from './App';
+
 
 let text = 'Hello world!'
 //const elem = <h2>Hello World!</h2>;
 //const elem = React.createElement('h2', { className: 'greetings' }, 'Hello World');
-const elem = (
-  <div>
-    <h2 className="text">{text}</h2>
-    <input type="text" />
-    <label htmlFor=""></label>
-    <button></button>
-    <button />
-  </div>
-);
+// const elem = (
+//   <div>
+//     <h2 className="text">{text}</h2>
+//     <input type="text" />
+//     <label htmlFor=""></label>
+//     <button></button>
+//     <button />
+//   </div>
+// );
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
-  //   <App />
+  <App />
   // </React.StrictMode>
-  elem
+  //elem
 );
 
 // If you want to start measuring performance in your app, pass a function
